@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2d1b12f7ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Biobio | Erbjudanden</title>
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark färg">
+    <a class="navbar-brand" href="index.html">BioBio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100" id="navbarNav">
+      
+      <ul class="navbar-nav mr-md-auto ">
+        <li class="nav-item">
+          <a class="nav-link" href="filmer.html">Filmer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="biljetter.html">Biljetter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nyheter.html">Nyheter</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="omoss.html">Om oss</a>
+        </li>
+        <!-- Tilllagd:-->
+        <li class="nav-item active">
+            <a class="nav-link" href="erbjudanden.html">Erbjudanden<span class="sr-only">(current)</span></a>
+        </li>          
+      </ul>
+      
+    <form class="form-inline d-flex ">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Sök filmer" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-md-0 px-lg-5 " type="submit">Sök</button> <!-- Ändrat: px-lg -->
+    </form>    
+    </div>      
+  </nav>
+
+  <main> 
+    <div class="container my-4">      
+      <div class="my-sm-5 col-12 col-xl-8">
+        <h1>Erbjudanden</h1>
+        <p>Här på Biobio har vi flera förmånliga erbjudanden som kan göra ditt biobesök mer prisvärt.</p>
+      </div>
+      
+      <div class="row">
+        <div class="card-deck col-12 col-xl-8 mb-5">
+          <div class="card">
+            <img src="images/rabattkort.jpg" class="card-img-top" alt="Rabattkort">
+            <div class="card-body">
+              <h5 class="card-title">Rabattkort</h5>
+              <p class="card-text">Få 10% rabatt på alla biobiljetter</p>
+              <p class="card-text">Få 15% rabatt på drycker och snacks</p>
+              <p class="card-text">gäller 1 år</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <span>pris</span>
+              <span>100:-</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/presentkort.jpg" class="card-img-top" alt="Presentkort">
+            <div class="card-body">
+              <h5 class="card-title">Presentkort</h5>
+              <p class="card-text">Ge bort en bioupplevelse till någon du bryr dig om! Ett presentkort på bio passar för alla tillfällen och är alltid lika uppskattat!</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <span>pris</span>
+              <span>130 - 1000:-</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/företagsbiljett.jpg" class="card-img-top" alt="Företagsbiljett">
+            <div class="card-body">
+              <h5 class="card-title">Företagsbiljetter</h5>
+              <p class="card-text">Ge bort en biouplevelse till dina anställda. Perfekt som julklapp, belöning för ett extra bra arbete eller allmän stämningshöjare.</p>
+            </div>
+            <div class="card-footer small">
+              <span>Kontakta oss för pris</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4">
+          <h2>Beställ idag!</h2>
+          <form action="#">
+            <div class="form-group">
+                <label for="email">Epost</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Epost">
+            </div>
+            <div class="form-group">
+                <label for="name">Namn</label>
+                <input type="text" class="form-control" id="name" placeholder="Namn">
+            </div>
+            <div class="form-group">
+                <label for="adress">Adress</label>
+                <input type="text" class="form-control" id="adress" placeholder="Adress">
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="postnr">Postnr.</label>
+                <input type="tel" class="form-control" placeholder="Postnr.">
+              </div>
+              <div class="col">
+                <label for="postnr">Ort</label>
+                <input type="text" class="form-control" placeholder="Ort">
+              </div>
+            </div>
+            <div class="d-flex my-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="faktura" id="faktura1" value="option1" checked>
+                <label class="form-check-label" for="faktura1">Faktura via epost</label>
+              </div>
+              <div class="form-check ml-3">
+                <input class="form-check-input" type="radio" name="faktura" id="faktura2" value="option2">
+                <label class="form-check-label" for="faktura2">Pappersfaktura</label>
+              </div> 
+            </div>
+            <button type="submit" class="btn btn-warning mt-4 mt-sm-0 w-100">Skicka</button>                  
+          </form>
+        </div>
+      </div>
+    </div>    
+  </main>
+                                                      <!--lagt till:-->
+  <footer class="row färg text-white pt-5 mx-0">  <!--pt-5 mx-0-->
+    <div class="col-sm-4 d-flex flex-column align-items-center">    
+        <ul class="list-unstyled text-uppercase font-weight-bold">
+          <li><a href="filmer.html">filmer</a></li>
+          <li><a href="biljetter.html">biljetter</a></li>
+          <li><a href="nyheter.html">Nyheter</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+          <li><a href="erbjudanden.html">Erbjudanden</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-4 d-flex flex-column align-items-center">
+        <p><strong>Prenumerera på nyhetsbrev:</strong></p>
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control col-md-8" type="text" placeholder="Din emailadress">
+          <button class="btn btn-warning text-dark padding-anmaldig col-md-4" type="submit">Anmäl dig</button>
+        </form>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+        <p>Biobio © 2019</p>
+    </div>
+    <div class="col-sm-4 d-flex flex-column align-items-center">
+        <div class="container text-center">
+          <h><strong>BIOBIO</strong></h>
+          <p>Hornsgatan 123<br>117 28, Stockholm<br>Tel. 076 123 12 12<br>info@biobio.se</p>
+        </div>
+    </div>
+  </footer>
+
+
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

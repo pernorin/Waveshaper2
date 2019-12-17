@@ -1,0 +1,224 @@
+
+*{
+    font-family: 'Libre Franklin', sans-serif;
+  }
+  .färg{
+    background: #1B615F;
+  }
+  .btn{
+   border-radius: 15px;
+  }
+  .form-control{
+    border-radius: 15px;
+  }
+
+  @media only screen and (max-width: 575px){ /* för sökknappen*/
+  .btn{
+    width: 100%;
+    }
+  }
+  @media screen and (min-width: 767px) and (max-width: 815px){
+  nav{
+  
+    padding-right: 0 !important;
+  }
+  nav li{
+    font-size: 0.8em;
+  }
+
+}
+  /* carousel */
+  .carousel{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /*cards*/
+  .Ah{
+      text-align: center;
+    }
+    .box{
+      padding: 15px;
+      display:block;
+      text-align: center;
+      /* ta bort?
+      border: 1px white; */
+      
+    } 
+  .card-img{ 
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 2px 2px  black;
+    padding: 5px;
+      
+    }
+  .img-fluid { 
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 5px;
+    background-repeat: no-repeat;   
+    
+    }
+
+    .card-img-top{ /*olika i style.css*/
+      border-radius: 15px 15px 0 0;
+    }
+    .card{ /*olika i style.css*/
+      border-radius: 15px 15px;
+    }
+    
+  .europa{ 
+    margin: 10px;
+    border: none;    
+    max-width: 540px;
+  } 
+  
+  .form-control{
+    border-radius: 15px; 
+  }
+  .btn-outline-dark:hover{
+    background: #ffc107;
+    color: black;
+  }
+  .container p{
+    padding: 5px;
+  }
+ 
+  #modalbtn{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .valdFilm{  
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 5px;
+  }
+
+  /*
+  .btn{
+    border-radius: 15px;
+    border-color: black;
+    text-align: center;
+  }
+
+/* för 'erbjudanden'*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .card-deck{
+    flex-direction: column;
+  }
+}
+
+
+
+  /* footer */
+
+.icons {
+        font-size: 38px;
+}
+footer a{
+        color: white;
+        text-decoration: none;
+}
+footer a:hover{
+        color: lightgray;
+        text-decoration: none;
+}
+.padding-anmaldig {
+        padding: 6px 0px;
+}
+
+/* footern i botten*/
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main{  
+  flex: 1;
+}
+
+/* om oss*/
+#map{
+  padding: 20px;
+  }
+  .img{
+    width: 100%;
+    height: auto;
+    }
+
+
+/* Nyheter */
+
+div .carousel-inner .carousel-item img {
+  width: 100%;
+  max-height: 35vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.carousel-title-font {
+  font-size: 5vw;
+  /* background: gray; */
+  text-shadow: black 1px 1px;
+}
+.carousel-date-font {
+  font-size: 4vw;
+  text-shadow: black 1px 1px;
+}
+
+.nyhet-wrapper-outer {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: black;
+}
+
+.nyheter-item {
+  height: 100px;
+  border: solid gray 1px;
+}
+.nyheter-date {
+  color: gray;
+}
+.nyheter-date:before{
+  font-family: "font awesome 5 free";
+  font-weight: 400;
+  content: "\f017";
+  margin-right: 10px;
+}
+.nyheter-info {
+  color: black;
+}
+.nyheter-info:hover:after{
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  content: "\f105";
+  margin-left: 10px;
+}
+.nyheter-wrapper-inner {
+  border-bottom: solid gray 1px;
+  padding: 10px 0px;
+}
+.nyheter-div a {
+  text-decoration: none;
+}
+.nyheter-div a:hover {
+  color: gray;
+}
+.nyheter-list img{
+  height: 75px;
+  width: 75px;
+}
+.img-sub {
+  height: 75px;
+  width: 75px;
+}
+/* carousel */
+/* Make the image fully responsive */
+/* .carousel-inner img {
+  width: 100%;
+  height: 100%;
+} */
+

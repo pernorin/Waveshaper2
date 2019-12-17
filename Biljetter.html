@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2d1b12f7ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> 
+    <title>Biobio | Biljetter</title>
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark färg">
+    <a class="navbar-brand" href="index.html">BioBio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100" id="navbarNav">
+      
+      <ul class="navbar-nav mr-md-auto ">
+        <li class="nav-item">
+          <a class="nav-link" href="filmer.html">Filmer</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="biljetter.html">Biljetter<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nyheter.html">Nyheter</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="omoss.html">Om oss</a>
+        </li>        
+        <li class="nav-item">
+            <a class="nav-link" href="erbjudanden.html">Erbjudanden</a>
+        </li>          
+      </ul>
+      
+    <form class="form-inline d-flex ">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Sök filmer" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-md-0 px-lg-5 " type="submit">Sök</button>
+    </form>    
+    </div>      
+  </nav>
+    <main>
+      <!--Showtimes-->
+      <div class="container">
+        <h3 class="pt-3">Boka Biljett</h3>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="sel1">Välj dag</label>
+            <select class="form-control" id="sel1" name="sellist1">
+              <option>19/12 - idag</option>
+              <option>20/12 - imorgon</option>
+              <option>21/12 - lördag</option>
+              <option>22/12 - söndag</option>
+              <option>23/12 - måndag</option>
+              <option>24/12 - tisdag</option>
+              <option>25/12 - onsdag</option>
+              <option>26/12 - torsdag</option>
+              <option>27/12 - fredag</option>
+              <option>28/12 - lördag</option>
+              <option>29/12 - söndag</option>
+              <option>30/12 - måndag</option>
+              <option>31/12 - tisdag</option>
+              <option>01/01 - onsdag</option>
+              <option>02/01 - torsdag</option>
+              <option>03/01 - fredag</option>
+            </select>
+          </div>
+        </form>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="sel1">Välj film</label>
+            <select class="form-control" id="sel1" name="sellist1">
+              <option>21 Bridges</option>
+              <option>438 dagar</option>
+              <option>7 Kogustaki Mucize</option>
+              <option>Ad Astra</option>
+              <option>After the Wedding</option>
+              <option>Ailos Resa</option>
+              <option>Aladdin</option>
+              <option>Alfons leker Einstein</option>
+              <option>Amazing Grace</option>
+              <option>Countdown</option>
+              <option>Downton Abbey</option>
+              <option>Flykten från DDR</option>
+              <option>Gemini Man</option>
+              <option>Hustlers</option>
+              <option>Jumanji: The Next Level</option>
+              <option>Knives Out</option>
+            </select>
+          </div>
+        </form>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="sel1">Välj tid</label>
+            <select class="form-control" id="sel1" name="sellist1">
+              <option>15:00</option>
+              <option>18:00</option>
+              <option>21:00</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <!-- Movie box -->
+      <div class="container">
+          <!--Visar vald film-->
+          <div class="row my-5 py-3">
+            <div class="col-md-4">
+              <img src="images/jumanji.jpg" alt="Film 1" class="w-100 valdFilm">
+            </div>
+            <div class="col-md-6 m-5">
+              <h2>Film 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni neque sequi delectus odio. Quisquam odit cupiditate minima. Laborum odit necessitatibus doloremque, iste officiis, aperiam laboriosam voluptatum fugit, non ratione sit.</p>
+              <a class="btn btn-warning mb-4 mb-sm-0" href="#" role="button">Boka</a><span class="mx-sm-4 "></span>
+            </div>
+          </div>
+    </main>
+                                                         
+  <footer class="row färg text-white pt-5 mx-0">
+    <div class="col-sm-4 d-flex flex-column align-items-center">    
+        <ul class="list-unstyled text-uppercase font-weight-bold">
+          <li><a href="filmer.html">filmer</a></li>
+          <li><a href="biljetter.html">biljetter</a></li>
+          <li><a href="nyheter.html">Nyheter</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+          <li><a href="erbjudanden.html">Erbjudanden</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-4 d-flex flex-column align-items-center">
+        <p><strong>Prenumerera på nyhetsbrev:</strong></p>
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control col-md-8" type="text" placeholder="Din emailadress">
+          <button class="btn btn-warning text-dark padding-anmaldig col-md-4" type="submit">Anmäl dig</button>
+        </form>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+        <p>Biobio © 2019</p>
+    </div>
+    <div class="col-sm-4 d-flex flex-column align-items-center">
+        <div class="container text-center">
+          <h><strong>BIOBIO</strong></h>
+          <p>Hornsgatan 123<br>117 28, Stockholm<br>Tel. 076 123 12 12<br>info@biobio.se</p>
+        </div>
+    </div>
+  </footer>
+
+
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
